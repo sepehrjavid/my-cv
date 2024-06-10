@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <PersonalInfo/>
   <EducationSection/>
   <ExperienceSection/>
 </template>
@@ -7,6 +7,7 @@
 <script>
 import EducationSection from './components/sections/EducationSection.vue'
 import ExperienceSection from './components/sections/ExperienceSection.vue'
+import PersonalInfo from './components/sections/PersonalInfo.vue'
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
@@ -15,7 +16,8 @@ export default {
   name: 'App',
   components: {
     EducationSection,
-    ExperienceSection
+    ExperienceSection,
+    PersonalInfo
   }
 }
 </script>
