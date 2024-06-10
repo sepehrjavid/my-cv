@@ -49,7 +49,7 @@ export default {
           details: [
             'Obtained deep knowledge of eBPF programming and Linux network stack including Qdisc, XDP, Kprobes, and iptables.',
             'Conducted in-depth research on networking in the Linux kernel, eBPF programming, congestion control mechanisms, and packet manipulation.',
-            'Engineered a sophisticated eBPF congestion control protocol (called Sepittov1) using packet manipulation and graph theory, improving network latency in an SRv6 network compared to hop-based routing protocols.'
+            'Engineered a sophisticated eBPF congestion control protocol (called Sepittov1) using packet manipulation and graph theory, improving network latency in an SRv6 network compared.'
           ]
         },
         // Add other experiences similarly...
@@ -61,15 +61,6 @@ export default {
 
 <style scoped>
 @import '~@fortawesome/fontawesome-free/css/all.css';
-
-.experience {
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 h2 {
   text-align: center;
