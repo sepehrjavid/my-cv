@@ -3,12 +3,13 @@
       <h3 class="degree">{{ educationInfo.title }} | <span class="university">{{educationInfo.university}}</span></h3>
       <div class="details">
         <div class="date-location">
-          <i class="fas fa-calendar-alt"></i> {{educationInfo.period}}
+          <i class="fas fa-calendar-alt"></i>
+          <span class="date">{{educationInfo.period}}</span>
           <span class="location"><i class="fas fa-map-marker-alt"></i> {{educationInfo.location}}</span>
         </div>
         <ul class="descriptions">
           <li v-for="point in educationInfo.points" :key="point.id">
-            <p>{{ point.description }}</p>
+            {{ point.description }}
           </li>
         </ul>
       </div>
@@ -34,16 +35,19 @@ export default {
   border-bottom: 2px solid #555; /* Gray underline */
   margin-bottom: 16px;
   padding-bottom: 4px;
+  text-align: left; /* Align title to the left */
 }
 
 .education-item {
   margin-bottom: 24px;
+  /* padding-left: 10%; */
 }
 
 .degree {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
+  text-align: left; /* Align title to the left */
 }
 
 .university {
@@ -52,29 +56,40 @@ export default {
 }
 
 .details {
-  margin-left: 24px; /* Indentation for details */
+  text-align: left;
+  margin-left: 15px; 
 }
 
 .date-location {
+  margin-top: 5px;
   font-size: 14px;
   color: #555; /* Dark gray for date and location */
   display: flex;
-  align-items: left;
   gap: 12px; /* Space between date and location */
+  text-align: left; /* Align title to the left */
+}
+
+.date {
+  display: flex;
+  gap: 4px;
+  text-align: left; /* Align date to the left */
 }
 
 .date-location i {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px;
 }
 
 .location {
   color: #000; /* Black color for location */
+  text-align: left; /* Align title to the left */
 }
 
 .descriptions {
   margin-top: 8px;
-  padding-left: 24px; /* Indentation for descriptions */
-  list-style-type: none;
+  padding-left: 20px; /* Indentation for descriptions */
+  list-style-type: disc; /* Show bullet points */
+  list-style-position: inside; /* Bullets outside the text */
+  text-align: left; /* Align location to the left */
 }
 
 .descriptions li {

@@ -14,24 +14,25 @@ export default {
       educations: [
         {
           id: 1,
-          title: "SECCLO",
-          university: "Test",
-          period: "HI",
-          location: "Stockholm",
+          title: "Master’s in Security and Cloud Computing (SECCLO)",
+          university: "KTH University and Aalto University",
+          period: "09 2021 – 07 2023",
+          location: "Espoo/Stockholm, Finland/Sweden",
           points: [
-            {id: 1, description: "it was nice"},
-            {id: 2, description: "it was nice 2"},
+            {id: 1, description: "Achieved full grades in 15 courses out of 17, including top student honors in Ethical Hacking, with an A score. Subsequently invited to serve as a Teaching Assistant for the course."},
+            {id: 2, description: "First year at Aalto University with GPA 4.59/5"},
+            {id: 3, description: "Second year at KTH Royal Institute of Technology with GPA 3.875/4"},
           ]
         },
         {
-          id: 1,
-          title: "SECCLO",
-          university: "Test",
-          period: "HI",
-          location: "Stockholm",
+          id: 2,
+          title: "Bachelor’s in Computer Science",
+          university: "Shiraz University",
+          period: "09 2017 – 07 2021",
+          location: "Shiraz, Iran",
           points: [
-            {id: 1, description: "it was nice"},
-            {id: 2, description: "it was nice 2"},
+            {id: 1, description: "GPA: 17.74/20"},
+            {id: 2, description: "Ranked 7th among 67 students in the class"},
           ]
         }
       ]
@@ -82,7 +83,6 @@ export default {
   font-size: 14px;
   color: #555; /* Dark gray for date and location */
   display: flex;
-  align-items: left;
   gap: 12px; /* Space between date and location */
 }
 
