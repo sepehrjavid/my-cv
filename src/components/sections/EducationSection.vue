@@ -1,25 +1,42 @@
 <template>
   <section class="education-section">
     <h2 class="section-title">EDUCATION</h2>
-    <EducationItem/>
-    <div class="education-item">
-      <h3 class="degree">Bachelor’s in Computer Science | <span class="university">Shiraz University</span></h3>
-      <div class="details">
-        <div class="date-location">
-          <i class="fas fa-calendar-alt"></i> 09 2017 – 07 2021
-          <span class="location"><i class="fas fa-map-marker-alt"></i> Shiraz, Iran</span>
-        </div>
-        <ul class="descriptions">
-          <li>GPA: 17.74/20 (Ranked 7th among 67 students in the class)</li>
-        </ul>
-      </div>
-    </div>
+    <EducationItem v-for="education in educations" :key="education.id" :educationInfo="education"/>
   </section>
 </template>
 
 <script>
 import EducationItem from '../items/EducationItem.vue'
+
 export default {
+  data() {
+    return {
+      educations: [
+        {
+          id: 1,
+          title: "SECCLO",
+          university: "Test",
+          period: "HI",
+          location: "Stockholm",
+          points: [
+            {id: 1, description: "it was nice"},
+            {id: 2, description: "it was nice 2"},
+          ]
+        },
+        {
+          id: 1,
+          title: "SECCLO",
+          university: "Test",
+          period: "HI",
+          location: "Stockholm",
+          points: [
+            {id: 1, description: "it was nice"},
+            {id: 2, description: "it was nice 2"},
+          ]
+        }
+      ]
+    }
+  },
   name: 'EducationSection',
   components: {
     EducationItem

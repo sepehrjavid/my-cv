@@ -1,14 +1,15 @@
 <template>
   <section class="education-item">
-      <h3 class="degree">Master’s in Security and Cloud Computing (SECCLO) | <span class="university">KTH University and Aalto University</span></h3>
+      <h3 class="degree">{{ educationInfo.title }} | <span class="university">{{educationInfo.university}}</span></h3>
       <div class="details">
         <div class="date-location">
-          <i class="fas fa-calendar-alt"></i> 09 2021 – 07 2023
-          <span class="location"><i class="fas fa-map-marker-alt"></i> Espoo/Stockholm, Finland/Sweden</span>
+          <i class="fas fa-calendar-alt"></i> {{educationInfo.period}}
+          <span class="location"><i class="fas fa-map-marker-alt"></i> {{educationInfo.location}}</span>
         </div>
         <ul class="descriptions">
-          <li>First year at Aalto University with GPA 4.59/5</li>
-          <li>Second year at KTH Royal Institute of Technology with GPA 3.875/4</li>
+          <li v-for="point in educationInfo.points" :key="point.id">
+            <p>{{ point.description }}</p>
+          </li>
         </ul>
       </div>
   </section>
@@ -17,6 +18,11 @@
 <script>
 export default {
   name: 'EducationItem',
+  props: {
+  educationInfo: {
+   type: Object
+  }
+}
 }
 </script>
 
