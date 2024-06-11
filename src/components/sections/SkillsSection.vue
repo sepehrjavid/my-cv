@@ -5,7 +5,9 @@
       <div class="category-header" @click="toggleCategory(index)">
         <i :class="category.icon"></i>
         <span>{{ category.name }}</span>
-        <i :class="['fas', 'fa-chevron-down', { 'open': category.open }]"></i>
+        <div :class="[{ 'open': category.open }]">
+          <i class="fas fa-chevron-down"></i>
+        </div>
       </div>
       <ul v-show="category.open" class="skill-list">
         <li v-for="(item, i) in category.skills" :key="i">
@@ -131,12 +133,12 @@ h2 {
   background: #005bb5;
 }
 
-.category-header i, .subcategory-header i {
+.category-header div, .subcategory-header div {
   margin-left: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 
-.category-header i.open, .subcategory-header i.open {
+.category-header div.open, .subcategory-header div.open {
   transform: rotate(180deg);
 }
 
