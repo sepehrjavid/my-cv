@@ -4,6 +4,8 @@
     <EducationSection/>
     <ExperienceSection/>
     <SkillsSection/>
+    <PublicationSection/>
+    <AchievmentSection/>
   </div>  
 </template>
 
@@ -12,6 +14,8 @@ import EducationSection from './components/sections/EducationSection.vue'
 import ExperienceSection from './components/sections/ExperienceSection.vue'
 import PersonalInfo from './components/sections/PersonalInfo.vue'
 import SkillsSection from './components/sections/SkillsSection.vue'
+import PublicationSection from './components/sections/PublicationSection.vue'
+import AchievmentSection from './components/sections/AchievmentSection.vue'
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
@@ -22,7 +26,9 @@ export default {
     EducationSection,
     ExperienceSection,
     PersonalInfo,
-    SkillsSection
+    SkillsSection,
+    PublicationSection,
+    AchievmentSection
   }
 }
 </script>
@@ -36,6 +42,7 @@ export default {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   max-width: 850px;
   margin: 0 auto;
+  text-align: center;
 }
 
 
