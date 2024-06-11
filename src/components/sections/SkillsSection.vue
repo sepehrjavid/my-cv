@@ -95,16 +95,6 @@ export default {
 <style scoped>
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
-.skills {
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 h2 {
   text-align: center;
   margin-bottom: 20px;
