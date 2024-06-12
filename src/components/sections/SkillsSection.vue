@@ -37,40 +37,71 @@ export default {
           name: 'Programming Languages',
           icon: 'fas fa-code',
           open: false,
-          skills: ['JavaScript', 'Python', 'Java', 'C++']
+          skills: ['C/C++', 'Python', 'Java', 'Javascript', 'Bash']
         },
         {
-          name: 'Frameworks & Libraries',
-          icon: 'fas fa-cubes',
+          name: 'Web Dev Tools/Frameworks',
+          icon: 'fab fa-js',
           open: false,
-          skills: ['Vue.js', 'React', 'Node.js', 'Spring Boot']
+          skills: ['Nodejs', 'Django', 'ReactsJs', 'Vuejs', 'Flask', 'Git', 'Nginx']
         },
         {
-          name: 'Tools & Platforms',
-          icon: 'fas fa-tools',
+          name: 'Cloud',
+          icon: 'fas fa-cloud',
           open: false,
           skills: [
-            'Git',
+            'Ansible',
             'Docker',
             'Kubernetes',
+            'Terafform',
+            'gRPC',
+            'MQTT',
+            'Network Service Mesh',
+            'OpenStack',
+            'gitLab Devops',
+            'Kafka',
+            'Grafana',
+            'Prometheus',
             {
-              name: 'AWS',
+              name: 'Kubernetes CNIs',
               open: false,
-              subSkills: ['EC2', 'S3', 'Lambda', 'RDS']
+              subSkills: ['Calico', 'Cilium']
+            },
+            {
+              name: 'Google CLoud Platform (GCP)',
+              open: false,
+              subSkills: ['GKE', 'ComputeEngine', 'Storage', 'Dataflow', 'Big-query', 'Loadbalancer', 'Cloud Function', 'Cloud Armor']
+            },
+            {
+              name: 'Amazon Web Service (AWS)',
+              open: false,
+              subSkills: ['S2', 'Lambda', 'DynamoDB', 'Pubsub', 'EC2', 'ECS', 'EKS', 'Cloud Watch', 'RDS', 'IAM']
             }
           ]
         },
         {
-          name: 'Databases',
+          name: 'Databases/Caching',
           icon: 'fas fa-database',
           open: false,
-          skills: ['MySQL', 'PostgreSQL', 'MongoDB']
+          skills: ['PostgreSQL', 'MongoDB', 'SQLite', 'Redis', 'Vault']
         },
         {
-          name: 'Soft Skills',
-          icon: 'fas fa-user-friends',
+          name: 'Security',
+          icon: 'fas fa-lock',
           open: false,
-          skills: ['Teamwork', 'Communication', 'Problem-solving']
+          skills: ['Metasploit', 'Cain&Abel', 'BurpSuite', 'BeEF', 'EthicalHacking', 'Informationsecurity', 'Networksecurity', 'Trivy', 'ScoutSuite']
+        },
+        {
+          name: 'Networking',
+          icon: 'fas fa-network-wired',
+          open: false,
+          skills: ['CCNA R&S and security', 'Wireshark', 'HLS', 'WireGuard', 'strongSwan', 'Fastclick', 'DPDK', 'SRv6', 'eBPF programming', 'Linux kernel network stack']
+        },
+        {
+          name: 'Operating Systems',
+          icon: 'fas fa-desktop',
+          open: false,
+          skills: ['Kali Linux', 'Linux Server and Desktop', 'Windows Server', 'MacOS']
         }
       ]
     };
