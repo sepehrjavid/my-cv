@@ -1,8 +1,8 @@
 <template>
   <div class="cv">
     <PersonalInfo/>
-    <EducationSection/>
     <ExperienceSection/>
+    <EducationSection/>
     <SkillsSection/>
     <PublicationSection/>
     <AchievmentSection/>
