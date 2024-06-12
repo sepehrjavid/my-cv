@@ -3,7 +3,7 @@
       <h2>Achievements</h2>
       <div v-for="(achievement, index) in achievements" :key="index" class="achievement">
         <h3>{{ achievement.title }}</h3>
-        <p class="details">{{ achievement.details }}</p>
+        <!-- <p class="details">{{ achievement.details }}</p> -->
       </div>
     </section>
   </template>
@@ -15,12 +15,10 @@
       return {
         achievements: [
           {
-            title: 'Achievement 1',
-            details: 'Details of achievement 1'
+            title: 'Junction 2021 Winner in Sustainable Data Infrastructure Challenge By Aiven'
           },
           {
-            title: 'Achievement 2',
-            details: 'Details of achievement 2'
+            title: 'Erasmus Mundus Full Scholar among 542 applicants'
           },
           // Add more achievements as needed
         ]
@@ -67,9 +65,9 @@
     color: #005bb5;
   }
   
-  .details {
+  /* .details {
     margin: 0 0 10px;
     color: #777;
-  }
+  } */
   </style>
   

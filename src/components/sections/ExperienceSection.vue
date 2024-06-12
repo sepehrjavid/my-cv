@@ -2,19 +2,18 @@
   <section class="experience">
     <h2>Experience</h2>
     <div v-for="(job, index) in experiences" :key="index" class="job">
-      <h3><i class="fas fa-briefcase"></i> {{ job.title }}</h3>
-      <p class="company"><i class="fas fa-building"></i> {{ job.company }} - <span class="location"><i class="fas fa-map-marker-alt"></i> {{ job.location }}</span></p>
-      <p class="date"><i class="fas fa-calendar-alt"></i> {{ job.date }}</p>
-      <ul>
-        <li v-for="(detail, i) in job.details" :key="i"><i class="fas fa-check-circle"></i> {{ detail }}</li>
-      </ul>
+      <ExperienceItem :experienceInfo="job"/>
     </div>
   </section>
 </template>
 
 <script>
+import ExperienceItem from '../items/ExperienceItem.vue'
 export default {
   name: 'ExperienceSection',
+  components: {
+    ExperienceItem
+  },
   data() {
     return {
       experiences: [
@@ -28,7 +27,7 @@ export default {
             'Introduced and deployed GCP Cloud Armor and API Gateway for improved traffic control and flexibility.',
             'Reduced GCP costs by 15.1% by eliminating redundant resources and optimizing resource types for cost efficiency.',
             'Added observability to the cluster using Grafana stack, identifying slow APIs and improving performance.',
-            'Deploying and supporting a company’s cloud solution using GKE, Bigquery, Kafka, Dataflow, and Cloud Function.'
+            'Deploying and supporting a company\'s cloud solution using GKE, Bigquery, Kafka, Dataflow, and Cloud Function.'
           ]
         },
         {
@@ -125,42 +124,4 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.job h3 {
-  margin: 0 0 10px;
-  color: #0073e6;
-  font-size: 1.5em;
-}
-
-.company {
-  font-weight: bold;
-  color: #555;
-  margin: 10px 0;
-}
-
-.location {
-  font-style: italic;
-  color: #999;
-}
-
-.date {
-  color: #999;
-  margin-bottom: 10px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-li i {
-  margin-right: 10px;
-  color: #28a745;
-}
 </style>
