@@ -26,7 +26,7 @@
           { value: '+46 (0)73 506 9239', icon: 'fas fa-phone', link: 'tel:+46735069239' },
           { value: 'Stockholm, Sweden', icon: 'fas fa-map-marker-alt' },
           { value: 'linkedin.com/in/sepehr-javid', icon: 'fab fa-linkedin', link: 'https://linkedin.com/in/sepehr-javid' },
-          { value: 'github.com/sepehravid', icon: 'fab fa-github', link: 'https://github.com/sepehrjavid' }
+          { value: 'github.com/sepehrjavid', icon: 'fab fa-github', link: 'https://github.com/sepehrjavid' }
         ]
       };
     }
