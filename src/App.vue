@@ -6,6 +6,7 @@
     <SkillsSection/>
     <PublicationSection/>
     <AchievmentSection/>
+    <Certificates/>
   </div>  
 </template>
 
@@ -16,6 +17,7 @@ import PersonalInfo from './components/sections/PersonalInfo.vue'
 import SkillsSection from './components/sections/SkillsSection.vue'
 import PublicationSection from './components/sections/PublicationSection.vue'
 import AchievmentSection from './components/sections/AchievmentSection.vue'
+import Certificates from './components/sections/Certificates.vue'
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
@@ -28,7 +30,8 @@ export default {
     PersonalInfo,
     SkillsSection,
     PublicationSection,
-    AchievmentSection
+    AchievmentSection,
+    Certificates
   }
 }
 </script>
