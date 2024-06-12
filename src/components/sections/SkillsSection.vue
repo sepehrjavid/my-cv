@@ -89,13 +89,13 @@ export default {
           name: 'Security',
           icon: 'fas fa-lock',
           open: false,
-          skills: ['Metasploit', 'Cain&Abel', 'BurpSuite', 'BeEF', 'EthicalHacking', 'Informationsecurity', 'Networksecurity', 'Trivy', 'ScoutSuite']
+          skills: ['Metasploit', 'Cain&Abel', 'BurpSuite', 'WireGuard', 'strongSwan', 'BeEF', 'EthicalHacking', 'Informationsecurity', 'Networksecurity', 'Trivy', 'ScoutSuite']
         },
         {
           name: 'Networking',
           icon: 'fas fa-network-wired',
           open: false,
-          skills: ['CCNA R&S and security', 'Wireshark', 'HLS', 'WireGuard', 'strongSwan', 'Fastclick', 'DPDK', 'SRv6', 'eBPF programming', 'Linux kernel network stack']
+          skills: ['CCNA R&S and security', 'Wireshark', 'HLS', 'Fastclick', 'DPDK', 'SRv6', 'eBPF programming', 'Linux kernel network stack']
         },
         {
           name: 'Operating Systems',
