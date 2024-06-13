@@ -13,7 +13,9 @@
         <li v-for="(item, i) in category.skills" :key="i">
           <div v-if="item.subSkills" @click="toggleSubCategory(category, i)" class="subcategory-header">
             {{ item.name }}
-            <i :class="['fas', 'fa-chevron-down', { 'open': item.open }]"></i>
+            <div :class="[{ 'open': item.open }]">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <ul v-show="item.open" v-if="item.subSkills" class="sub-skill-list">
             <li v-for="(subSkill, j) in item.subSkills" :key="j">

@@ -2,7 +2,7 @@
     <section class="certificates">
       <h2>Certificates</h2>
       <div v-for="(certificate, index) in certificates" :key="index" class="certificate">
-        <h3>{{ certificate.title }}</h3>
+        <h3><i class="fas fa-certificate"></i> {{ certificate.title }}</h3>
         <p class="issuer">
             <i class="fas fa-building"></i> 
             {{ certificate.issuer }}

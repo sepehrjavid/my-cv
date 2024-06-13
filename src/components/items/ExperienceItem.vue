@@ -57,7 +57,7 @@ li i {
 .title {
   margin: 0 0 10px;
   color: #0073e6;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 </style>
   

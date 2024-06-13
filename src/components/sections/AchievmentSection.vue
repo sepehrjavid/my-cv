@@ -2,7 +2,7 @@
     <section class="achievements">
       <h2>Achievements</h2>
       <div v-for="(achievement, index) in achievements" :key="index" class="achievement">
-        <h3>{{ achievement.title }}</h3>
+        <h3><i class="fas fa-trophy"></i> {{ achievement.title }}</h3>
         <!-- <p class="details">{{ achievement.details }}</p> -->
       </div>
     </section>
