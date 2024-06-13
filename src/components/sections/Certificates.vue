@@ -25,24 +25,24 @@
           {
             title: 'AWS Cloud Technical Essentials',
             issuer: 'Amazon Web Service (AWS)',
-            issueDate: 'January 2020',
+            issueDate: 'June 4, 2024',
             details: 'Hands on experience with many AWS services such as IAM, DynamoDB, EC2, Lambda, ECS, Cloudwatch, S3, RDS, etc.'
           },
           {
             title: 'Next-Gen Data Center Security Cloud Guard for Google Cloud',
             issuer: 'Google Cloud',
-            issueDate: 'January 2020',
+            issueDate: 'April 9, 2024',
             details: 'Lab work experience with GloudGaurd.'
           },
           {
             title: "Hardening Default GKE Cluster Configurations",
-            issueDate: 'January 2020',
+            issueDate: 'March 18, 2024',
             issuer: "Google Cloud",
             details: "Hands on practice with GKE and pod security conecrns such as pod escape and priviledge escalation."
           },
           {
             title: "Cloud Computing Basics (Cloud 101)",
-            issueDate: 'January 2020',
+            issueDate: 'March 18, 2024',
             issuer: "LearnQuest",
             details: "Introduction to different cloud platforms, cloud deployment modules, and understanding manged services. "
           }
