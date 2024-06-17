@@ -2,6 +2,7 @@
   <div class="dashboard">
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
+      <PersonalInfo/>
       <ul>
         <li :class="{ active: activeSection === 'Experience' }" @click="activeSection = 'Experience'">
           <i class="fas fa-briefcase"></i> Experience
@@ -36,6 +37,7 @@
 import ExperienceSection from './ExperienceSection.vue';
 import EducationSection from './EducationSection.vue';
 import SkillsSection from './SkillsSection.vue';
+import PersonalInfo from './PersonalInfo.vue';
 // import Skills from './Skills.vue';
 
 export default {
@@ -43,6 +45,7 @@ export default {
     ExperienceSection,
     EducationSection,
     SkillsSection,
+    PersonalInfo
     // Add more sections as needed
   },
   data() {
