@@ -16,7 +16,9 @@
         <li :class="{ active: activeSection === 'Certificates' }" @click="activeSection = 'Certificates'">
           <i class="fas fa-cogs icons"></i> Certificates
         </li>
-        <!-- Add more sections as needed -->
+        <li :class="{ active: activeSection === 'Certificates' }" @click="activeSection = 'Certificates'">
+          <i class="fas fa-cogs icons"></i> Certificates
+        </li>
       </ul>
     </nav>
 
@@ -70,14 +72,15 @@ export default {
   display: flex;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; /* Prevent overflow scrolling */
+  overflow: hidden; 
 }
 
 .sidebar {
   width: 25%; /* 20% width for the sidebar */
-  height: 100%; /* Full height for the sidebar */
+  height: 100%; 
+  overflow-y: scroll;
   background-color: #1e1e1e;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   display: flex;

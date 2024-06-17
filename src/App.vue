@@ -20,7 +20,7 @@ export default {
 body {
   padding: 0;
   margin: 0;
-  display: flex;
+  /* display: flex; */
 }
 
 
