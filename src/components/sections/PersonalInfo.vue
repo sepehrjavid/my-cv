@@ -40,6 +40,7 @@ export default {
 
 .personal-info {
   padding: 15px;
+  margin-bottom: 10px;
   background-color: #1e1e1e; 
   color: #ffffff;
 }
@@ -48,7 +49,7 @@ export default {
   text-align: center;
   margin-bottom: 15px;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .info-container {

@@ -5,13 +5,16 @@
       <PersonalInfo/>
       <ul>
         <li :class="{ active: activeSection === 'Experience' }" @click="activeSection = 'Experience'">
-          <i class="fas fa-briefcase"></i> Experience
+          <i class="fas fa-briefcase icons"></i> Experience
         </li>
         <li :class="{ active: activeSection === 'Education' }" @click="activeSection = 'Education'">
-          <i class="fas fa-graduation-cap"></i> Education
+          <i class="fas fa-graduation-cap icons"></i> Education
         </li>
         <li :class="{ active: activeSection === 'Skills' }" @click="activeSection = 'Skills'">
-          <i class="fas fa-cogs"></i> Skills
+          <i class="fas fa-cogs icons"></i> Skills
+        </li>
+        <li :class="{ active: activeSection === 'Certificates' }" @click="activeSection = 'Certificates'">
+          <i class="fas fa-cogs icons"></i> Certificates
         </li>
         <!-- Add more sections as needed -->
       </ul>
@@ -28,6 +31,9 @@
       <section v-if="activeSection === 'Skills'">
         <SkillsSection />
       </section>
+      <section v-if="activeSection === 'Certificates'">
+        <Certificates />
+      </section>
       <!-- Add more sections as needed -->
     </main>
   </div>
@@ -38,6 +44,7 @@ import ExperienceSection from './ExperienceSection.vue';
 import EducationSection from './EducationSection.vue';
 import SkillsSection from './SkillsSection.vue';
 import PersonalInfo from './PersonalInfo.vue';
+import Certificates from './Certificates.vue';
 // import Skills from './Skills.vue';
 
 export default {
@@ -45,7 +52,8 @@ export default {
     ExperienceSection,
     EducationSection,
     SkillsSection,
-    PersonalInfo
+    PersonalInfo,
+    Certificates
     // Add more sections as needed
   },
   data() {
@@ -103,7 +111,7 @@ export default {
   color: #ffffff;
 }
 
-.sidebar li i {
+.icons {
   margin-right: 10px;
 }
 
