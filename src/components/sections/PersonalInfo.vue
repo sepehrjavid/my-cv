@@ -1,6 +1,9 @@
 <template>
   <section class="personal-info">
-    <h2>Personal Information</h2>
+    <div class="title">
+      <h2>Sepehr Javid</h2>
+      <h3>Security and Cloud Engineer</h3>
+    </div>
     <div class="info-container">
       <div class="info-item" v-for="(info, index) in personalInfo" :key="index">
         <div class="icon-container">
@@ -21,7 +24,6 @@ export default {
   data() {
     return {
       personalInfo: [
-        { value: 'Sepehr Javid', icon: 'fas fa-user' },
         { value: 'javid.sepehr77@gmail.com', icon: 'fas fa-envelope', link: 'mailto:javid.sepehr77@gmail.com' },
         { value: '+46 (0)73 506 9239', icon: 'fas fa-phone', link: 'tel:+46735069239' },
         { value: 'Stockholm, Sweden', icon: 'fas fa-map-marker-alt' },
@@ -37,17 +39,16 @@ export default {
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 .personal-info {
-  padding: 20px;
-  background-color: #1e1e1e; /* Dark background for the section */
-  border-radius: 10px;
+  padding: 15px;
+  background-color: #1e1e1e; 
   color: #ffffff;
 }
 
-h2 {
+.title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .info-container {
