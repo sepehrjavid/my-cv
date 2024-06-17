@@ -25,7 +25,7 @@
         <EducationSection />
       </section>
       <section v-if="activeSection === 'Skills'">
-        <Skills />
+        <SkillsSection />
       </section>
       <!-- Add more sections as needed -->
     </main>
@@ -35,13 +35,14 @@
 <script>
 import ExperienceSection from './ExperienceSection.vue';
 import EducationSection from './EducationSection.vue';
+import SkillsSection from './SkillsSection.vue';
 // import Skills from './Skills.vue';
 
 export default {
   components: {
     ExperienceSection,
     EducationSection,
-    // Skills,
+    SkillsSection,
     // Add more sections as needed
   },
   data() {
