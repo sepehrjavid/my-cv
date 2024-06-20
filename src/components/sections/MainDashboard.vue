@@ -16,9 +16,10 @@
         <li :class="{ active: activeSection === 'Certificates' }" @click="activeSection = 'Certificates'">
           <i class="fas fa-cogs icons"></i> Certificates
         </li>
-        <li :class="{ active: activeSection === 'Certificates' }" @click="activeSection = 'Certificates'">
-          <i class="fas fa-cogs icons"></i> Certificates
+        <li :class="{ active: activeSection === 'Publications' }" @click="activeSection = 'Publications'">
+          <i class="fas fa-book icons"></i> Publications
         </li>
+        <!-- Add more sections as needed -->
       </ul>
     </nav>
 
@@ -36,6 +37,9 @@
       <section v-if="activeSection === 'Certificates'">
         <Certificates />
       </section>
+      <section v-if="activeSection === 'Publications'">
+        <PublicationSection />
+      </section>
       <!-- Add more sections as needed -->
     </main>
   </div>
@@ -47,6 +51,7 @@ import EducationSection from './EducationSection.vue';
 import SkillsSection from './SkillsSection.vue';
 import PersonalInfo from './PersonalInfo.vue';
 import Certificates from './Certificates.vue';
+import PublicationSection from './PublicationSection.vue';
 // import Skills from './Skills.vue';
 
 export default {
@@ -55,7 +60,8 @@ export default {
     EducationSection,
     SkillsSection,
     PersonalInfo,
-    Certificates
+    Certificates,
+    PublicationSection
     // Add more sections as needed
   },
   data() {
@@ -80,13 +86,13 @@ export default {
   height: 100%; 
   overflow-y: scroll;
   background-color: #1e1e1e;
-  padding: 30px;
+  padding: 15px;
   box-sizing: border-box;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
 }
 
 .sidebar ul {
