@@ -84,9 +84,9 @@ export default {
 .sidebar {
   width: 25%; /* 20% width for the sidebar */
   height: 100%; 
-  overflow-y: scroll;
   background-color: #1e1e1e;
-  padding: 15px;
+  padding-top: 15px;
+  padding: 25px;
   box-sizing: border-box;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   flex-direction: column;

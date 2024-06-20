@@ -39,8 +39,8 @@ export default {
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 .personal-info {
-  padding: 15px;
-  padding-top: 60px;
+  padding-top: 0;
+  padding: 5px;
   margin-bottom: 10px;
   background-color: #1e1e1e; 
   color: #ffffff;
@@ -49,7 +49,6 @@ export default {
 .title {
   text-align: center;
   margin-bottom: 15px;
-  padding-top: 20px;
   color: #ffffff;
   font-size: 1.3em;
 }
