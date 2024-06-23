@@ -22,6 +22,9 @@
         <li :class="{ active: activeSection === 'Achievments' }" @click="activeSection = 'Achievments'">
           <i class="fas fa-trophy icons"></i> Achievments
         </li>
+        <li :class="{ active: activeSection === 'Aboutme' }" @click="activeSection = 'Aboutme'">
+          <i class="fas fa-user icons"></i> About Me
+        </li>
         <!-- Add more sections as needed -->
       </ul>
     </nav>
@@ -46,6 +49,9 @@
       <section v-if="activeSection === 'Achievments'">
         <AchievementsSection />
       </section>
+      <section v-if="activeSection === 'Aboutme'">
+        <AboutmeSection />
+      </section>
       <!-- Add more sections as needed -->
     </main>
   </div>
@@ -59,6 +65,7 @@ import PersonalInfo from './PersonalInfo.vue';
 import Certificates from './Certificates.vue';
 import PublicationSection from './PublicationSection.vue';
 import AchievementsSection from './AchievementsSection.vue';
+import AboutmeSection from './AboutmeSection.vue';
 // import Skills from './Skills.vue';
 
 export default {
@@ -69,7 +76,8 @@ export default {
     PersonalInfo,
     Certificates,
     PublicationSection,
-    AchievementsSection
+    AchievementsSection,
+    AboutmeSection
     // Add more sections as needed
   },
   data() {
