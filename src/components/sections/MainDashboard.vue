@@ -14,10 +14,13 @@
           <i class="fas fa-cogs icons"></i> Skills
         </li>
         <li :class="{ active: activeSection === 'Certificates' }" @click="activeSection = 'Certificates'">
-          <i class="fas fa-cogs icons"></i> Certificates
+          <i class="fas fa-certificate icons"></i> Certificates
         </li>
         <li :class="{ active: activeSection === 'Publications' }" @click="activeSection = 'Publications'">
           <i class="fas fa-book icons"></i> Publications
+        </li>
+        <li :class="{ active: activeSection === 'Achievments' }" @click="activeSection = 'Achievments'">
+          <i class="fas fa-trophy icons"></i> Achievments
         </li>
         <!-- Add more sections as needed -->
       </ul>
@@ -40,6 +43,9 @@
       <section v-if="activeSection === 'Publications'">
         <PublicationSection />
       </section>
+      <section v-if="activeSection === 'Achievments'">
+        <AchievementsSection />
+      </section>
       <!-- Add more sections as needed -->
     </main>
   </div>
@@ -52,6 +58,7 @@ import SkillsSection from './SkillsSection.vue';
 import PersonalInfo from './PersonalInfo.vue';
 import Certificates from './Certificates.vue';
 import PublicationSection from './PublicationSection.vue';
+import AchievementsSection from './AchievementsSection.vue';
 // import Skills from './Skills.vue';
 
 export default {
@@ -61,7 +68,8 @@ export default {
     SkillsSection,
     PersonalInfo,
     Certificates,
-    PublicationSection
+    PublicationSection,
+    AchievementsSection
     // Add more sections as needed
   },
   data() {
@@ -85,8 +93,11 @@ export default {
   width: 25%; /* 20% width for the sidebar */
   height: 100%; 
   background-color: #1e1e1e;
-  padding-top: 15px;
-  padding: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
   box-sizing: border-box;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   flex-direction: column;
