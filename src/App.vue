@@ -1,23 +1,9 @@
 <template>
-  <div class="cv">
-    <PersonalInfo/>
-    <ExperienceSection/>
-    <EducationSection/>
-    <SkillsSection/>
-    <PublicationSection/>
-    <AchievmentSection/>
-    <Certificates/>
-  </div>  
+    <MainDashboard/>
 </template>
 
 <script>
-import EducationSection from './components/sections/EducationSection.vue'
-import ExperienceSection from './components/sections/ExperienceSection.vue'
-import PersonalInfo from './components/sections/PersonalInfo.vue'
-import SkillsSection from './components/sections/SkillsSection.vue'
-import PublicationSection from './components/sections/PublicationSection.vue'
-import AchievmentSection from './components/sections/AchievmentSection.vue'
-import Certificates from './components/sections/Certificates.vue'
+import MainDashboard from './components/sections/MainDashboard.vue'
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
@@ -25,36 +11,20 @@ import '@fortawesome/fontawesome-free/js/all.js';
 export default {
   name: 'App',
   components: {
-    EducationSection,
-    ExperienceSection,
-    PersonalInfo,
-    SkillsSection,
-    PublicationSection,
-    AchievmentSection,
-    Certificates
+    MainDashboard
   }
 }
 </script>
 
 <style>
-
-.cv {
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+  /* display: flex; */
 }
 
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: #121212;
 }
 </style>

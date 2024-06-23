@@ -1,19 +1,29 @@
 <template>
-  <section class="experience">
-    <h2>Experience</h2>
-    <div v-for="(job, index) in experiences" :key="index" class="job">
-      <ExperienceItem :experienceInfo="job"/>
+  <div class="experience-section">
+    <div class="experience-card" v-for="experience in experiences" :key="experience.id">
+      <div class="experience-header">
+        <h3 class="job-title">{{ experience.title }}</h3>
+        <p class="company-location">
+          <span class="company">
+            <i class="fas fa-building"></i> {{ experience.company }}
+          </span> - 
+          <span class="location">
+            <i class="fas fa-map-marker-alt"></i> {{ experience.location }}
+          </span>
+        </p>
+        <p class="dates"><i class="fas fa-calendar-alt"></i> {{ experience.date }}</p>
+      </div>
+      <ul class="experience-details">
+        <li v-for="(detail, index) in experience.details" :key="index">
+          <i class="fas fa-check-circle detail"></i> {{ detail }}
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import ExperienceItem from '../items/ExperienceItem.vue'
 export default {
-  name: 'ExperienceSection',
-  components: {
-    ExperienceItem
-  },
   data() {
     return {
       experiences: [
@@ -92,8 +102,7 @@ export default {
             'ARP spoofing with Cain & Abel and packet sniffing with Wireshark in the VOIP system for pen-testing.',
             'Participated in Cisco core switch upgrade on the network, and network troubleshooting.'
           ]
-        },
-        // Add other experiences similarly...
+        }
       ]
     };
   }
@@ -101,27 +110,79 @@ export default {
 </script>
 
 <style scoped>
-@import '~@fortawesome/fontawesome-free/css/all.css';
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 2em;
+.experience-section {
+  padding: 20px;
 }
 
-.job {
+.experience-section h2 {
+  font-size: 1.8em;
   margin-bottom: 20px;
+  color: #00acc1;
+}
+
+.experience-card {
+  background-color: #2b2b2b;
+  color: #cfcfcf;
   padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.job:hover {
+.experience-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
+.experience-header {
+  margin-bottom: 15px;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #00acc1;
+}
+
+.company-location {
+  margin: 5px;
+  font-size: 1em;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.location {
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.dates {
+  margin: 5px;
+  font-size: 0.9em;
+  color: #aaaaaa;
+}
+
+.experience-details {
+  margin-top: 10px;
+}
+
+.experience-details li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+/* .detail {
+  margin-right: 10px;
+  color: #00acc1;
+} */
+
+svg {
+  margin-right: 5px;
+  color: #00acc1;
+}
 </style>
